@@ -1,0 +1,45 @@
+body {
+    background-color: #2A1B3D;
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    color: #D83F87;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 600px;
+	height: 120px;
+	border: 3px solid #8265A7;
+    padding: 5px;
+}
+
+#checkpoint + input {
+    display: block;
+    margin-top: 10px;
+}
+
+.flashes {
+    float: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.flashes li {
+    background-color: #8265A7;
+    padding: 10px;
+}

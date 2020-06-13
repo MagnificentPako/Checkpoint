@@ -2,6 +2,7 @@ body {
     background-color: #2A1B3D;
     color: white;
     font-family: sans-serif;
+    margin: 0;
 }
 
 a {
@@ -11,6 +12,7 @@ a {
 
 nav ul {
     list-style: none;
+    margin-top: 0;
 }
 
 nav ul li {
@@ -25,21 +27,31 @@ textarea {
     padding: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    textarea {
+        width: 95%;
+    }
+}
+
 #checkpoint + input {
     display: block;
     margin-top: 10px;
 }
 
 .flashes {
-    float: right;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    width: 100%;
     list-style: none;
-    padding-left: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .flashes li {
     background-color: #8265A7;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+.content {
+    padding: 15px;
 }

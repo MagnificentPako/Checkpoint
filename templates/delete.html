@@ -17,9 +17,12 @@
     {% endif %}
     {% endwith %}
     {{ content }}
-    <form action="/{{ checkpoint_id }}/delete" method="post">
-        <input type="password" name="password" id="password">
-        <input type="submit" value="Delete">
-    </form>
+    <div class="content">
+        <form action="/{{ checkpoint_id }}/delete" method="post">
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+
 </body>
 </html>

@@ -16,14 +16,16 @@
         </ul>
     {% endif %}
     {% endwith %}
-    <nav>
-        <ul>
-            <li><a href="/">Back</a></li>
-            <li><a href="/{{ checkpoint_id }}/delete">Delete</a></li>
-        </ul>
-    </nav>
-    <div id="content">
-        {{ content|safe }}
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/">Back</a></li>
+                <li><a href="/{{ checkpoint_id }}/delete">Delete</a></li>
+            </ul>
+        </nav>
+        <div id="user-content">
+            {{ content|safe }}
+        </div>
     </div>
 </body>
 </html>
